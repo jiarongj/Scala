@@ -1,0 +1,39 @@
+Start writing your ScalaFiddle code here
+println("hello world")
+val scap = (x:Int) => x^2
+println(scap(1))
+val add = (x:Int, y:Int)=>x+y
+println(add(1,6))
+val take = ()=> 43
+println(take())
+
+var pp: Int = 1+1
+println(pp)
+
+println({
+  var x = 1+3
+  x+1
+})
+
+
+def add(x:Int, y:Int):Int=x+y
+println(add(4,5))
+
+def name: String = System.getProperty("user.name")
+println("Hello, " + name + "!")
+
+def getSquareString(input:Double):String={
+  val keep = input*input
+  keep.toString
+}
+println(getSquareString(0.25))
+
+class Greeter(prefix:String, Postfix:String){
+  def Greet(name:String):Unit={
+    val tak = prefix+name+Postfix
+    println(tak)
+  }
+}
+ 
+val Gre = new Greeter("Like a ", " baby")
+Gre.Greet("cute")
